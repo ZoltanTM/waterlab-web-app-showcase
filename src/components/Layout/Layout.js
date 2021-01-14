@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';  
-import 'react-chartjs-2';
+// import 'react-chartjs-2';
 
 import Navbar from './Navbar';
 import Header from './Header';
@@ -10,7 +10,14 @@ import Footer from './Footer';
 import ScrollTop from './ScrollTop';
 import LogoutModal from './LogoutModal';
 
-import VerticalBar from '../chart-components/VerticalBar';
+import LoginPage from '../pages-content/LoginPage';
+import OverviewPage from '../pages-content/OverviewPage';
+import MeasurementsPage from '../pages-content/MeasurementsPage';
+import DeviceListPage from '../pages-content/DeviceListPage';
+import DeviceSinglePage from '../pages-content/DeviceSinglePage';
+import MapPage from '../pages-content/MapPage';
+import ContactPage from '../pages-content/ContactPage';
+import ProfilePage from '../pages-content/ProfilePage';
 
 // import VerticalBar from '@reactchartjs/react-chart.js';
 // '@reactchartjs/react-chart.js'
@@ -25,7 +32,7 @@ class Layout extends React.Component {
       <div>
         {/* <!-- Page Wrapper --> */}  
         <div id="wrapper">  
-          <Navbar></Navbar>  
+          <Navbar />  
 
           {/* <!-- Content Wrapper --> */}
           <div id="content-wrapper" class="d-flex flex-column">  
@@ -38,71 +45,36 @@ class Layout extends React.Component {
               <div className="container-fluid">
                 
                 <Switch>
+                    <Route path="/login">
+                        <LoginPage />
+                    </Route>
+
                     <Route path="/overview">
-
-                        {/* <!-- Page Heading --> */}
-                        <h1 className="h1 mb-2 text-gray-800">General Overview</h1>
-                        
-                        <div className="row">
-                          <VerticalBar />
-                        </div>
-
-                        {/* <!-- Content Row --> */}
-                        <div className="row">
-                          <div className="col-xl-8 col-lg-7">
-
-                            {/* <!-- Area Chart --> */}
-                            <div className="card shadow mb-4">
-                                <div className="card-header py-3">
-                                    <h6 className="m-0 font-weight-bold text-primary">Pollution level</h6>
-                                </div>
-                                <div className="card-body">
-                                    <div className="chart-area">
-                                        {/* <canvas id="myAreaChart"></canvas> */}
-                                        <VerticalBar />
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* <!-- Bar Chart --> */}
-                            <div className="card shadow mb-4">
-                                  <div className="card-header py-3">
-                                      <h6 className="m-0 font-weight-bold text-primary">pH level</h6>
-                                  </div>
-                                  <div className="card-body">
-                                      <div className="chart-bar">
-                                          {/* <canvas id="myBarChart"></canvas> */}
-                                          <VerticalBar />
-                                      </div>
-                                  </div>
-                              </div> 
-                          </div>                     
-                        </div>
-                    
+                        <OverviewPage />
                     </Route>
                     
                     <Route path="/measurements">
-
+                        <MeasurementsPage />
                     </Route>
 
                     <Route path="/device-list">
-                      
+                        <DeviceListPage />
                     </Route>
                     
-                    <Route path="/single-device">
-                      
+                    <Route path="/device-single">
+                        <DeviceSinglePage />
                     </Route>
                     
                     <Route path="/map">
-                      
+                        <MapPage />
                     </Route>
                     
                     <Route path="/contact">
-                      
+                        <ContactPage />
                     </Route>
                     
                     <Route path="/profile">
-                      
+                        <ProfilePage />
                     </Route>
                 </Switch>
                 

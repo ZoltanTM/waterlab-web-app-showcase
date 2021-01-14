@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 // import logo from './logo.svg';
 // import './App.css';
-import Layout from './components/Layout/Layout';
+import Layout from './components/layout/Layout';
 // import PageWrapper from './components/Layout/PageWrapper';
 // import ScrollTop from './components/Layout/ScrollTop';
 // import LogoutModal from './components/Layout/LogoutModal';

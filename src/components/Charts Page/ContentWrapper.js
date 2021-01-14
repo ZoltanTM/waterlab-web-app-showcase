@@ -1,8 +1,8 @@
 import React from 'react';
 import 'react-chartjs-2';
 
-import Footer from '../Layout/Footer';
-import Header from '../Layout/Header';
+import Footer from '../layout/Footer';
+import Header from '../layout/Header';
 import VerticalBar from '../chart-components/VerticalBar';
 
 class ContentWrapper extends React.Component {
