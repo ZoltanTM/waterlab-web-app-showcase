@@ -1,6 +1,7 @@
 import React from 'react';
-import Sidebar from '../Sidebar';
-import ContentWrapper from '../ContentWrapper';
+import Navbar from '../Navbar';
+import ContentWrapper from '../Charts Page/ContentWrapper';
+// import ContentWrapper from '../Index Page/ContentWrapper';
 
 class PageWrapper extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class PageWrapper extends React.Component {
       <div id="wrapper">
       {/* <!-- Page Wrapper --> */}
 
-          <Sidebar />
+          <Navbar />
           <ContentWrapper />
 
       {/* <!-- End of Page Wrapper --> */}
