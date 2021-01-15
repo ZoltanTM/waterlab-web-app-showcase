@@ -1,4 +1,5 @@
 {
+  "homepage": "https://lucianax.github.io/waterlab-web-app-showcase",
   "name": "waterlab",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://lucianax.github.io/waterlab-web-app-showcase",
   "eslintConfig": {
     "extends": [
       "react-app",
