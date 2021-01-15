@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://lucianax.github.io/waterlab-web-app-showcase",
+  "homepage": "https://lucianax.github.io/waterlab-web-app-showcase",
   "eslintConfig": {
     "extends": [
       "react-app",
