@@ -24,7 +24,7 @@ function OverviewPage(props) {
         
         {/* Device data in chart */}
         <div className="row">
-            <VerticalBar />
+            <VerticalBar options={{ maintainAspectRatio: false }}/>
         </div>
     </div>
 
