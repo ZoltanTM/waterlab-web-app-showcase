@@ -8,6 +8,8 @@ function LoginPage(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+//   LOGIC CODE GOES HERE !!
+
   return (<>
     {/* <!-- Page Heading --> */}
     <h1 className="h1 mb-2 text-gray-800">Login</h1>

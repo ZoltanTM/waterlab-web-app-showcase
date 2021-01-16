@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // import [chart] from '../chart-components/VerticalBar';
 
 function ContactPage(props) {
+//   LOGIC CODE GOES HERE !!
   return (<>
     {/* <!-- Page Heading --> */}
     <h1 className="h1 mb-2 text-gray-800">Contact</h1>

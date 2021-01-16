@@ -11,6 +11,8 @@ function DeviceSinglePage(props) {
       <Warning Entry Component></Device>
   */
 
+//   LOGIC CODE GOES HERE !!
+
   return (<>
     {/* <!-- Page Heading --> */}
     <h1 className="h1 mb-2 text-gray-800">Device Single - [Device id/name prop] </h1>

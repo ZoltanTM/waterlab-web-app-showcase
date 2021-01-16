@@ -8,6 +8,9 @@ function MeasurementsPage(props) {
   // const warningDevices = mapping function for iterating through warnings for all devices
   //    <Warning Device Entry Component></Device>
 
+  //   LOGIC CODE GOES HERE !!
+
+  
   return (<>
     {/* <!-- Page Heading --> */}
     <h1 className="h1 mb-2 text-gray-800">Measurements</h1>
