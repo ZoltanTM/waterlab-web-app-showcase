@@ -3,13 +3,14 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';  
 // import 'react-chartjs-2';
 
+// Layout components that appear on all pages
 import Navbar from './Navbar';
 import Header from './Header';
 import Footer from './Footer';
-
 import ScrollTop from './ScrollTop';
 import LogoutModal from './LogoutModal';
 
+// Pages Content
 import LoginPage from '../pages-content/LoginPage';
 import OverviewPage from '../pages-content/OverviewPage';
 import MeasurementsPage from '../pages-content/MeasurementsPage';
@@ -19,12 +20,6 @@ import MapPage from '../pages-content/MapPage';
 import ContactPage from '../pages-content/ContactPage';
 import ProfilePage from '../pages-content/ProfilePage';
 
-// import VerticalBar from '@reactchartjs/react-chart.js';
-// '@reactchartjs/react-chart.js'
-
-// import {  
-//     Route, Switch, Redirect  
-// } from 'react-router-dom';  
 
 class Layout extends React.Component {  
   render() {  

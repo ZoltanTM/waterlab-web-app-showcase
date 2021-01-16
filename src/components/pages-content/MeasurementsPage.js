@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import VerticalBar from '../chart-components/VerticalBar';
+import MultiAxisLine from '../chart-components/MultiAxisLine';
 // import [chart] from '../chart-components/VerticalBar';
 
 function MeasurementsPage(props) {
@@ -15,23 +15,108 @@ function MeasurementsPage(props) {
     {/* Warnings section */}
     <div>
         {/* {warningDevices} */}
+        Big fat warning list
     </div>
+
 
     {/* Measurements Section */}
     <div>
-        {/* pH levels chart */}
-        <div>
-            <h3>pH Levels</h3>
+        <div class="text-xs font-weight-bold text-uppercase mb-1">
+            <h2>Measurements - All Devices</h2>
         </div>
+        
 
-        {/* Conductivity Levels Chart*/}
-        <div>
-            <h3>Conductivity Levels</h3>
-        </div>
+        <div class="row">
 
-        {/* Temperature Levels Chart */}
-        <div>
-            <h3>Temperature Levels</h3>
+            {/* pH Levels */}
+            <div class="col-xl-12 col-lg-12" style={{ width: "100%" }}>
+                <div class="card border-left-warning shadow mb-4">
+                    {/* <!-- Card Header - Dropdown --> */}
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">pH Levels</h6>
+                        <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" id="dropdownMenuLink" href="#" role="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Choose an option:</div>
+                                <a class="dropdown-item" href="#">Reload data</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- Card Body --> */}
+                    <div class="card-body">
+                        <div class="">
+                            <MultiAxisLine options={{ maintainAspectRatio: false }} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Conductivity Levels */}
+            <div class="col-xl-12 col-lg-12">
+                <div class="card border-left-warning shadow mb-4">
+                    {/* <!-- Card Header - Dropdown --> */}
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Conductivity Levels</h6>
+                        <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" id="dropdownMenuLink" href="#" role="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Choose an option:</div>
+                                <a class="dropdown-item" href="#">Reload data</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- Card Body --> */}
+                    <div class="card-body">
+                        <div class="">
+                            <MultiAxisLine options={{ maintainAspectRatio: false }}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Temperature */}
+            <div class="col-xl-12 col-lg-12" style={{ width: "100%" }}>
+                <div class="card border-left-warning shadow mb-4">
+                    {/* <!-- Card Header - Dropdown --> */}
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Temperature</h6>
+                        <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" id="dropdownMenuLink" href="#" role="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Choose an option:</div>
+                                <a class="dropdown-item" href="#">Reload data</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- Card Body --> */}
+                    <div class="card-body">
+                        <div class="">
+                            <MultiAxisLine options={{ maintainAspectRatio: false }} />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </>)
