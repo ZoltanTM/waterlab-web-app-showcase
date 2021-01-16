@@ -30,7 +30,7 @@ function MapPage(props) {
                             aria-labelledby="dropdownMenuLink">
                             <div class="dropdown-header">Choose an option:</div>
                             <a class="dropdown-item" href="#">Reload data</a>
-                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>np
                             <a class="dropdown-item" href="#">Close</a>
                         </div>
                     </div>
